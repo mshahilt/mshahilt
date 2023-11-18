@@ -1,32 +1,306 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .subscribe-button{
+            background-color: rgb(216, 0, 0);
+            padding-left: 16px;
+            padding-right: 16px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border: none;
+            color: white;
+            border-radius: 3px;
+            margin-right: 8px;
+            cursor: pointer;
+            transition: opacity .15s;
+            align-items: top;
+        }
+        .subscribe-button:hover{
+            opacity: 0.7;
+        }
+        .subscribe-button:active{
+            opacity: 0.5;
+        }
+        .join-button{
+            background-color: white;
+            border: 1px solid;
+            border-color: rgb(35, 86, 255);
+            padding-left: 16px;
+            padding-right: 16px;
+            padding-top: 9px;
+            padding-bottom: 9px;
+            color: rgb(35, 86, 255);
+            border-radius: 2px;
+            margin-right: 8px;
+            cursor: pointer;
+            transition:  background-color .15s, color .15s
+        }
+        .join-button:hover{
+            background-color: rgb(35, 86, 255);
+            color: white;
+        }
+        .join-button:active{
+            opacity: 0.7;
+        }
+        .tweet-button{
+            background-color: #30b7ff;
+            border: none;
+            color: white;
+            padding-left: 16px;
+            padding-right: 16px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-radius: 30px;
+            font-weight: bold;
+            font-size: 15px;
+            cursor: pointer;
+         }
+         .tweet-button:hover{
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+         }
+        .uber-button{
+            margin-top: 10px;
+            background-color: black;
+            color: white;
+            padding-left: 16px;
+            padding-right: 16px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border: 1px;
+            cursor: pointer;
+            font-size: 12px;
+            transition: opacity .25s;
+        }
+        .uber-button:hover{
+            opacity: 0.7;
+        }
+        .amazon-button{
+            margin-left: 8px;
+            padding-left: 40px;
+            padding-right: 40px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            background-color: rgb(255, 215, 20);
+            border: none;
+            border-radius: 18px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            cursor: pointer;
+            transition: background-color .25s;
+        }
+        .amazon-button:hover{
+            background-color: rgb(240, 200, 0);
+        }
+        .github-button{
+            margin-left: 8px;
+            background-color: rgb(46, 164,79);
+            color: white;
+            border: none;
+            padding-left: 16px;
+            padding-right: 16px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-radius: 7px;
+            font-weight: bold;
+            font-size: 13px;
+            cursor: pointer;
+            transition: box-shadow .25s;
+        }
+        .github-button:hover{
+            box-shadow: 2px 2px 9px rgba(0, 0, 0, 0.5);
+        }
+        .bootstrap1-button{
+            margin-top: 10px;
+            border: none;
+            background-color: rgb(121, 82, 179);
+            color: white;
+            padding-left: 16px;
+            padding-right: 16px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-radius: 3px;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-right: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color .25s;
+        }
+        .bootstrap1-button:hover{
+            background-color:rgb(88, 53, 141) ;
+        }
+        .bootstrap2-button{
+            background-color: white;
+            border: 1px solid;
+            border-color: rgb(108, 117, 125);
+            padding-left: 16px;
+            padding-right: 16px;
+            padding-top: 9px;
+            padding-bottom: 9px;
+            font-family: Arial, Helvetica, sans-serif;
+            border-radius: 3px;
+            color: rgb(121, 82, 179);
+            font-weight: bold;
+            margin-right: 15px;
+            cursor: pointer;
+            transition: background-color .25s, color .25s;
+        }
+        .bootstrap2-button:hover{
+            background-color: grey;
+            color: white;
+        }
+        .linkedin-button1{
+            background-color: rgb(10, 102, 194);
+            border: none;
+            color: white;
+            padding-left: 16px;
+            padding-right: 16px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-radius: 30px;
+            font-weight: bold;
+            font-size: 14px;
+            margin-right: 5px ;
+            cursor: pointer;
+            transition: background-color .25s;
+        }
+        .linkedin-button1:hover{
+            background-color: rgb(12, 82, 151);
+        }
+        .linkedin-button2{
+            background-color: white;
+            border: 1px solid;
+            color: rgb(10, 102, 194);
+            padding-left: 16px;
+            padding-right: 16px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-radius: 30px;
+            font-weight: bold;
+            font-size: 15px;
+            cursor: pointer;
+            transition: border .15s;
+        }
+        .linkedin-button2:hover{
+            border: 3px solid;
+            padding-left: 13px;
+            padding-right: 13px;
+            padding-top: 7px;
+            padding-bottom: 7px;
+            border-radius: 30px;
+        }
+        .back-button{
+            padding-left: 10px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-right: 10px;
+            cursor: pointer;
+        }
+        .num{
+            padding-left: 10px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-right: 10px;
+            text-decoration: underline;
+            color: blue;
+        }
+        .stretch-button{
+            background-color: green;
+            padding-left: 16px;
+            padding-right: 16px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border: none;
+            color: white;
+            cursor: pointer;
+            transition: padding-left 1s, padding-right 1s, padding-top 1s, padding-bottom 1s;
+        }
+        .stretch-button:hover{
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        .d-click-button{
+            margin-left: 50px;
+            padding-left: 16px;
+            padding-right: 16px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            color: white;
+            background-color: green;
+            border: none;
+            cursor: pointer;
+            box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, .4);
+            transition: box-shadow .05s;
+            
+        }
+        .d-click-button:active{
+            padding-left: 18px;
+            padding-right: 18px;
+            padding-top: 12px;
+            padding-bottom: 12px;
+            box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, .4);
+        }
+        .ott{
+            padding-left: 16px;
+            padding-right: 16px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            color: white;
+            background-color: green;
+            border: none;
+            margin-right: 6px;
+            transition: padding-left .15s, padding-right .15s, margin-right .15s, margin-left .15s;
+            margin-left: 6px;
+        }
+        .ott:hover{
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            margin-left: 0px;
+            margin-right: 0px;
+        }
+    </style>
 </head>
 <body>
-    <section class="skills-section">
-        <div class="container">
-            <h2 class="section-heading">Skills</h2>
-            <div class="skill-card">
-                <div class="skill-card-inner">
-                    <div class="skill-image">
-                        <img src="your_skill_image1.jpg" alt="Skill 1">
-                    </div>
-                    <h3 class="skill-name">Skill Name 1</h3>
-                    <p class="skill-description">Description of Skill 1 goes here. Keep it concise.</p>
-                </div>
-            </div><br>
-            <div class="skill-card">
-                <div class="skill-card-inner">
-                    <div class="skill-image">
-                        <img src="1200px-Python.svg.png" alt="Skill 2">
-                    </div>
-                    <h3 class="skill-name">Skill Name 2</h3>
-                    <p class="skill-description">Description of Skill 2 goes here. Keep it concise.</p>
-                </div>
-            </div>
-            <!-- Add more skill cards as needed -->
-        </div>
-    </section>
+    <button class="subscribe-button">SUBSCRIBE</button>
+    <button class="join-button">JOIN</button>
+    <button class="tweet-button">Tweet</button>
+    <br>
+    <button class="uber-button">Request now</button>
+    <button class="amazon-button">Add to Cart</button>
+    <button class="github-button">Sign up</button>
+    <br>
+    <button class="bootstrap1-button">Get started</button>
+    <button class="bootstrap2-button">Download</button>
+    <button class="linkedin-button1">Apply on company website</button>
+    <button class="linkedin-button2">Save</button>
+    <br>
+    <br>
+    <button class="back-button">Back</button>
+    <a class="num">1</a>
+    <a class="num">2</a>
+    <a class="num">3</a>
+    <a class="num">4</a>
+    <button class="back-button">Next</button>
+    <br>
+    <br>
+    <br>
+    <br>
+    <button class="stretch-button">Stretch</button>
+    <button class="d-click-button">Shadow</button>
+    <br>
+    <br>
+    <br>
+    <br>
+    <button class="ott">One</button>
+    <button class="ott">Two</button>
+    <button class="ott">Three</button>
+
 </body>
 </html>
