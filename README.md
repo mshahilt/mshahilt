@@ -1,5 +1,5 @@
 # 💫 About Me:
-🔭 I’m currently working on an eCommerce Trovup<br><br>🌱 I’m currently learning ReactJs, NextJs<br><br>👨‍💻 All of my projects are available at github.com/mshahilt<br><br>📫 How to reach me mshahilt3@gmail.com<br><br>⚡ Fun fact prioritize debugging over developing
+🔭 A social media-integrated job portal (AliteHub)<br><br>🌱 I’m currently learning ReactJs, NextJs<br><br>👨‍💻 All of my projects are available at github.com/mshahilt<br><br>📫 How to reach me mshahilt3@gmail.com<br><br>⚡ Fun fact prioritize debugging over developing
 
 
 ## 🌐 Socials:
